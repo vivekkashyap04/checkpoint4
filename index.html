@@ -28,12 +28,12 @@
         <input id="toggle" type="checkbox" />
         <nav class="nav">
           <ul class="flex item-align column">
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Serivce</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Pricing</a></li>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Serivce</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#pricing">Pricing</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li class="drop-menu1 relative">
               <a href="#">Drop Down</a>
@@ -70,7 +70,9 @@
                 We are team of talented developers making websites with
                 bootstrap
               </h4>
-              <div class="Started-btn"><a href="#">Get Started</a></div>
+              <div class="Started-btn">
+                <i class="fas fa-arrow-right"></i><a href="#">Get Started</a>
+              </div>
             </header>
             <div class="flex item-align box-article">
               <article class="flex-40 orange-box flex-100">
@@ -114,16 +116,21 @@
       <section class="section2 margin-top">
         <div class="padding">
           <div class="container flex item-align">
-            <div class="flex-48 flex-100">
+            <div class="flex-48 flex-100 relative">
               <img
                 class="width-full"
                 src="assets/media/about-img.jpg"
                 alt="about"
               />
+              <div class="play-button">
+                <i class="fas fa-arrow-alt-circle-right"></i>
+              </div>
             </div>
-            <article class="flex-48 flex-100">
+            <article class="flex-48 flex-100 article1">
               <h4>About Us</h4>
-              <h2>Aliquam voluptates sequi quos blanditiis exercitationem</h2>
+              <h2 class="header-text1">
+                Enim quis est voluptatibus aliquid consequatur fugiat
+              </h2>
               <p class="para-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
                 voluptates sequi quos blanditiis exercitationem, repudiandae
@@ -248,12 +255,12 @@
                   sunt iusto enim architecto autem alia.
                 </p>
                 <div class="service-icon">
-                  <i class="fas fa-laptop"></i>
+                  <i class="fas fa-briefcase"></i>
                 </div>
               </div>
               <div class="flex-30 white-box relative margin flex-100">
-                <h3>Lorem Ipsum</h3>
-                <p>
+                <h3 class="service-text">Lorem Ipsum</h3>
+                <p class="para-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
                   sunt iusto enim architecto autem alia.
                 </p>
@@ -262,8 +269,8 @@
                 </div>
               </div>
               <div class="flex-30 white-box relative margin flex-100">
-                <h3>Lorem Ipsum</h3>
-                <p>
+                <h3 class="service-text">Lorem Ipsum</h3>
+                <p class="para-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
                   sunt iusto enim architecto autem alia.
                 </p>
@@ -272,8 +279,8 @@
                 </div>
               </div>
               <div class="flex-30 white-box relative margin flex-100">
-                <h3>Lorem Ipsum</h3>
-                <p>
+                <h3 class="service-text">Lorem Ipsum</h3>
+                <p class="para-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
                   sunt iusto enim architecto autem alia.
                 </p>
@@ -282,8 +289,8 @@
                 </div>
               </div>
               <div class="flex-30 white-box relative margin flex-100">
-                <h3>Lorem Ipsum</h3>
-                <p>
+                <h3 class="service-text">Lorem Ipsum</h3>
+                <p class="para-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
                   sunt iusto enim architecto autem alia.
                 </p>
@@ -292,8 +299,8 @@
                 </div>
               </div>
               <div class="flex-30 white-box relative margin flex-100">
-                <h3>Lorem Ipsum</h3>
-                <p>
+                <h3 class="service-text">Lorem Ipsum</h3>
+                <p class="para-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
                   sunt iusto enim architecto autem alia.
                 </p>
@@ -310,19 +317,21 @@
         <article class="container">
           <div class="flex flex-wrap">
             <div class="flex-48 flex-100">
-              <div class="relative">
+              <div class="relative font-0">
                 <img
                   class="width-full"
                   src="assets/media/values-1.jpg"
                   alt="value"
                 />
                 <div class="card">
-                  <h2 class="text-center">Our Mission</h2>
-                  <p>
+                  <h2 class="text-center mission">Our Mission</h2>
+                  <p class="para-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Quae sunt iusto enim architecto autem alia.
                   </p>
-                  <a href="#">Read More</a>
+                  <div class="right-arrow">
+                    <i class="fas fa-arrow-right"></i> <a href="#">Read More</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -334,12 +343,14 @@
                   alt="value"
                 />
                 <div class="card">
-                  <h2 class="text-center">Our Plan</h2>
-                  <p>
+                  <h2 class="text-center mission">Our Plan</h2>
+                  <p class="para-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Quae sunt iusto enim architecto autem alia.
                   </p>
-                  <a href="#">Read More</a>
+                  <div class="right-arrow">
+                    <i class="fas fa-arrow-right"></i> <a href="#">Read More</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -351,12 +362,14 @@
                   alt="value"
                 />
                 <div class="card">
-                  <h2 class="text-center">Our Vision</h2>
-                  <p>
+                  <h2 class="text-center mission">Our Vision</h2>
+                  <p class="para-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Quae sunt iusto enim architecto autem alia.
                   </p>
-                  <a href="#">Read More</a>
+                  <div class="right-arrow">
+                    <i class="fas fa-arrow-right"></i> <a href="#">Read More</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -368,12 +381,14 @@
                   alt="value"
                 />
                 <div class="card">
-                  <h2 class="text-center">Our Mission</h2>
-                  <p>
+                  <h2 class="text-center mission">Our Mission</h2>
+                  <p class="para-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Quae sunt iusto enim architecto autem alia.
                   </p>
-                  <a href="#">Read More</a>
+                  <div class="right-arrow">
+                    <i class="fas fa-arrow-right"></i> <a href="#">Read More</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -452,6 +467,12 @@
               maiores excepturi alias consectetur animi, adipisci ducimus vitae
               sunt delectus cumque accusantium. Vel, voluptas est.
             </p>
+            <div class="flex small-menu">
+              <h3 class="small-box1">All</h3>
+              <h3 class="small-box">App</h3>
+              <h3 class="small-box">Card</h3>
+              <h3 class="small-box">Web</h3>
+            </div>
           </div>
           <div class="flex flex-wrap">
             <div class="flex-30 margin flex-100">
